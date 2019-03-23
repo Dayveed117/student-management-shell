@@ -1,0 +1,16 @@
+#!/bin/bash
+#datas e calendarios
+
+cat menu1.txt
+
+case
+
+0)	exit
+1)	cat menu2.txt
+2)	
+3)
+4)
+5)
+
+esac
+
