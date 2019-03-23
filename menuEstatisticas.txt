@@ -1,0 +1,11 @@
+
+-Estatisticas- 
+ 
+1- Universidades
+2- Alunos
+3- Disciplinas 
+4- Listar Disciplinas com alunos Inscritos 
+
+0- Sair para o menu principa
+
+Introduza a opção:
