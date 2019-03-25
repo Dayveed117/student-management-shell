@@ -1,5 +1,4 @@
-
--Estatisticas- 
+-Consultar- 
  
 1- Universidades
 2- Alunos

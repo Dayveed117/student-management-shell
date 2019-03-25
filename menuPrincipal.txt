@@ -1,9 +1,8 @@
-
 -Menu Principal-
 
-1- Registo 
+1- Registo de Dados
 2- Alterar Dados
-3- Visualizar Dados / Estatísticas
+3- Consultar Dados
 4- Gestão dos ficheiros de Base de Dados
 
 0- Sair do programa
