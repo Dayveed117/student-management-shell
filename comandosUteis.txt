@@ -1,0 +1,33 @@
+GREP 
+
+grep "string_*" -> seleciona todas as linhas que contêm a substring "string" seguido de outra coisa qualquer
+
+podemos combinar comandos opções, por exemplo, grep -iwr "exemplo" procura a palavra exemplo em todos os ficheiros da directoria e subdirectorias
+
+-o -> mostar em output APENAS a matched substring
+-n -> numera as linhas no ficheiro de acordo com o matching
+-v -> mostra as linhas que não são matched
+-i -> torna a substring case insensitive
+-w -> força a substring apenas a palavras completas
+-c -> conta o numero de matching greps
+-C NUM -> mostra NUM linhas antes e depois do matched grep
+-r -> Procura pela substring nos ficheiros da pasta actual e subpastas
+-l -> Apenas mostra os nomes dos ficheiros que contêm matches
+
+
+
+CUT
+
+-f_c em que c é o campo separado por um delimitador (',',:,#,@,\,/, etc). Vários campos podem ser cortados se os ordenarmos do tipo -f 1,4
+-d'x' em que x é o delimitador (sem plicas)
+
+cut -d: -f 2 -> filtra em todas as linhas o campo '2' delimitado por ':'
+
+Podemos formatar o output usando o comando --output-delimiter=" " , que retira todos os separadores especificados em '-d' entre " "
+
+cut -d: -f 2,3 --output-delimiter=' ' -> mostraria em output os campos 2 e 3 sem o separador ":" 
+
+
+
+SED
+-
