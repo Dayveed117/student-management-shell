@@ -3,7 +3,8 @@
 1- Universidades
 2- Alunos
 3- Disciplinas 
-4- Listar Disciplinas com alunos Inscritos 
+4- Professores
+5- Listar Disciplinas com alunos Inscritos  
 
 0- Sair para o menu principa
 
