@@ -23,10 +23,8 @@ case $1 in
 
 		echo "Introduza o nome do professor: "
         read nomeProf
-		echo "Aluno por que é responsavel: "
-		read alunoRes
 
-        echo "$nomeProf:$alunoRes" >> $ficheiroIn
+        echo "$nomeProf" >> $ficheiroIn
 		echo "Registo feito com sucesso, pressionar ENTER para voltar ao menu principal"
 		read -s useless
 		
@@ -38,7 +36,9 @@ case $1 in
 
 		echo "Introduza o nome do aluno: "
         read nomeAluno
-        echo "Introduza a universidade de onde vem: "
+		echo "Numero de aluno: "
+        read numAluno
+		echo "Introduza a universidade de onde vem: "
         read universidadeAluno
         echo "Introduza o professor responsável: "
         read responsavelAluno
@@ -47,7 +47,7 @@ case $1 in
         echo "Introduza o ano que o aluno vem: "
         read ano
 
-        echo "$nomeAluno:$universidadeAluno:$responsavel:$semestre:$ano" >> $ficheiroIn
+        echo "$numAluno:$nomeAluno:$universidadeAluno:$responsavel:$semestre:$ano" >> $ficheiroIn
 		echo "Registo feito com sucesso, pressionar ENTER para voltar ao menu principal"
 		read -s useless
 		
@@ -61,10 +61,12 @@ case $1 in
         read nomeDisciplina
         echo "Introduza o código da disciplina: "
         read codigoDisciplina
-        echo "Introduza o ano e o semestre: "
-        read anosemestre
+        echo "Introduza o ano: "
+        read ano
+		echo "Introduza o semestre: "
+		read semestre
 
-        echo "$nomeDisciplina:$codigoDisciplina:$anosemestre" >> $ficheiroIn
+        echo "$codigoDisciplina:$nomeDisciplina:$ano:$semestre" >> $ficheiroIn
 		echo "Registo feito com sucesso, pressionar ENTER para voltar ao menu principal."
 		read -s useless
 		
