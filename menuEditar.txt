@@ -1,8 +1,8 @@
 -Editar- 
  
-1- Universidade 
+1- Aluno 
 2- Professor 
-3- Estudante 
+3- Universidade 
 4- Disciplina 
  
 0- Sair para o menu principal

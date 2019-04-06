@@ -9,12 +9,11 @@ case $1 in
 			mkdir backups
 	fi
 	
-	cp alunos.txt BKPalunos.txt
-	cp universidades.txt BKPuniversidades.txt
-	cp professores.txt BKPprofessores.txt
-	cp disciplinas.txt BKPdisciplinas.txt
+	cp alunos.txt ./backups/BKPalunos.txt
+	cp universidades.txt ./backups/BKPuniversidades.txt
+	cp professores.txt ./backups/BKPprofessores.txt
+	cp disciplinas.txt ./backups/BKPdisciplinas.txt
 	
-	mv -t backups BKPalunos.txt BKPuniversidades.txt BKPprofessores.txt BKPdisciplinas.txt
 	echo "Sucesso ao fazer backup, pressionar ENTER para voltar ao menu principal"
 	read -s useless
 	./principal.sh;;
@@ -27,13 +26,11 @@ case $1 in
 					echo "Não há backups a restaurar"
 				else
 					cd backups
-					cp *.txt ../
+					cp BKPalunos.txt ../alunos.txt
+					cp BKPuniversidades.txt ../universidades.txt
+					cp BKPprofessores.txt ../professores.txt
+					cp BKPdisciplinas.txt ../disciplinas.txt
 					cd ..
-					
-					mv BKPalunos.txt alunos.txt
-					mv BKPuniversidades.txt universidades.txt
-					mv BKPprofessores.txt professores.txt
-					mv BKPdisciplinas.txt disciplinas.txt
 					
 					echo "Sucesso ao restaurar backups, pressionar ENTER para voltar ao menu principal"
 				fi						

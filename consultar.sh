@@ -4,25 +4,29 @@ case $1 in
 
 0) ./principal.sh;;
 
-1) cat -n universidades.txt
+1) 	echo -e "\nLista de Universidades:"
+	cat -n universidades.txt 
 	
 	echo -e "\nPressionar ENTER para avançar"
 	read -s useless
 	./principal.sh;;
 	
-2) cat -n alunos.txt
-	
-	echo -e "\nPressionar ENTER para avançar"
-	read -s useless
-	./principal.sh;;
-
-3) cat -n disciplinas.txt
+2) 	echo -e "\nLista de Alunos:"
+	cat -n alunos.txt
 	
 	echo -e "\nPressionar ENTER para avançar"
 	read -s useless
 	./principal.sh;;
 
-4) cat -n professores.txt
+3) 	echo -e "\nLista de Disciplinas:"
+	cat -n disciplinas.txt
+	
+	echo -e "\nPressionar ENTER para avançar"
+	read -s useless
+	./principal.sh;;
+
+4) 	echo -e "\nLista de Professores:"
+	cat -n professores.txt
 	
 	echo -e "\nPressionar ENTER para avançar"
 	read -s useless

@@ -1,0 +1,11 @@
+-Menu de Modificações-
+	
+1- Alterar o nome
+2- Alterar a universidade
+3- Alterar o responsavel
+4- Alterar o semestre de entrada
+5- Alterar o ano de entrada
+6- Apagar aluno
+
+0- Sair para o menu principal
+

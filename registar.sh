@@ -21,12 +21,12 @@ case $1 in
 	echo "Registo de professores, pressionar ENTER para começar:"
 	read -s useless
 
+		echo "Introduza o número do professor: "
+        read numProf
 		echo "Introduza o nome do professor: "
         read nomeProf
-		echo "Aluno por que é responsavel: "
-		read alunoRes
 
-        echo "$nomeProf:$alunoRes" >> $ficheiroIn
+        echo "$numProf:$nomeProf" >> $ficheiroIn
 		echo "Registo feito com sucesso, pressionar ENTER para voltar ao menu principal"
 		read -s useless
 		
@@ -36,6 +36,15 @@ case $1 in
 	echo "Registo de Aluno, pressionar ENTER para começar:"
 	read -s useless
 
+		echo "Introduza o número do aluno: "
+        read nrAluno
+		
+		#if grep "^nraluno:" alunos.txt;	then
+		#	echo "Numero já existe!"
+		#	sleep 0.5
+		#	./registar.sh 3
+		#fi
+		
 		echo "Introduza o nome do aluno: "
         read nomeAluno
         echo "Introduza a universidade de onde vem: "
@@ -44,10 +53,10 @@ case $1 in
         read responsavelAluno
         echo "Introduza o semestre que o aluno vem: "
         read semestre
-        echo "Introduza o ano que o aluno vem: "
-        read ano
+        echo "Introduza o ano que o aluno vem: "		
+		read ano
 
-        echo "$nomeAluno:$universidadeAluno:$responsavel:$semestre:$ano" >> $ficheiroIn
+        echo "$nrAluno:$nomeAluno:$universidadeAluno:$responsavel:$semestre:$ano" >> $ficheiroIn
 		echo "Registo feito com sucesso, pressionar ENTER para voltar ao menu principal"
 		read -s useless
 		
@@ -61,10 +70,12 @@ case $1 in
         read nomeDisciplina
         echo "Introduza o código da disciplina: "
         read codigoDisciplina
-        echo "Introduza o ano e o semestre: "
-        read anosemestre
+        echo "Introduza o ano: "
+        read ano
+		echo "Introduza o semestre: "
+        read sem
 
-        echo "$nomeDisciplina:$codigoDisciplina:$anosemestre" >> $ficheiroIn
+        echo "$nomeDisciplina:$codigoDisciplina:$ano:$semestre" >> $ficheiroIn
 		echo "Registo feito com sucesso, pressionar ENTER para voltar ao menu principal."
 		read -s useless
 		
