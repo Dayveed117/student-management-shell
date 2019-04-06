@@ -28,7 +28,9 @@ case $1 in
 	read -s useless
 	./principal.sh;;
 
-*) echo "Escolher uma opção válida"
+*) 	echo "Escolher uma opção válida"
+	sleep 0.5
+	clear
 	cat menuConsultar.txt
 	read op1
 	./consultar.sh $op1;;

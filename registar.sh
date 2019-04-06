@@ -70,7 +70,11 @@ case $1 in
 		
 		./principal.sh;;
 
-*) echo "Escolher uma opção válida"
-		./principal.sh;;
+*) 		echo "Escolher uma opção válida"
+		sleep 0.5
+		clear
+		cat menuRegisto.txt
+		read op1
+		./registar.sh $op1;;
 	
 esac

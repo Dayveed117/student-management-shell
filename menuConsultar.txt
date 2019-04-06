@@ -6,6 +6,6 @@
 4- Professores
 5- Listar Disciplinas com alunos Inscritos  
 
-0- Sair para o menu principa
+0- Sair para o menu principal
 
 Introduza a opção:

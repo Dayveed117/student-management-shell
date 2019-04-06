@@ -1,6 +1,7 @@
 #!/bin/bash
 #datas e calendarios
-echo "Welcome to UbiStudents, press ENTER (or any key, really, as long as you press enter after)"
+clear
+echo "Welcome to UbiStudents, press ENTER"
 read -s useless
 cat menuPrincipal.txt
 
@@ -25,7 +26,8 @@ case $op in
 	read op1
 	./gestor.sh $op1;;
 	
-*) 	echo "Escolher uma opção válida"
+*) 	echo "Opção inválida"
+	sleep 0.5
 	./principal.sh;;
 
 esac
